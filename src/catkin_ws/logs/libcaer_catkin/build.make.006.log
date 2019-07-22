@@ -1,0 +1,646 @@
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target libcaer_src[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[ 10%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 10%] Built target roscpp_generate_messages_lisp
+[ 10%] Built target std_msgs_generate_messages_lisp
+[ 10%] Built target roscpp_generate_messages_py
+[ 10%] Built target roscpp_generate_messages_eus
+[ 10%] Built target std_msgs_generate_messages_cpp
+[ 10%] Built target std_msgs_generate_messages_nodejs
+[ 10%] [34m[1mCreating directories for 'libcaer_src'[0m
+[ 10%] Built target roscpp_generate_messages_nodejs
+[ 10%] Built target roscpp_generate_messages_cpp
+[ 10%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[ 10%] Built target rosgraph_msgs_generate_messages_cpp
+[ 10%] Built target rosgraph_msgs_generate_messages_lisp
+[ 10%] Built target rosgraph_msgs_generate_messages_py
+[ 10%] Built target std_msgs_generate_messages_eus
+[ 10%] Built target rosgraph_msgs_generate_messages_eus
+[ 20%] [34m[1mPerforming download step (git clone) for 'libcaer_src'[0m
+Cloning into 'libcaer_src'...
+Note: checking out '5d93b61d88b79a6ad66cca94300b9cd7e614f5f5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 5d93b61 DAVIS/FrameUtils: fix demoisaic when ROI is enabled for frames.
+[ 30%] [34m[1mNo update step for 'libcaer_src'[0m
+[ 40%] [34m[1mNo patch step for 'libcaer_src'[0m
+[ 50%] [34m[1mPerforming configure step for 'libcaer_src'[0m
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of void *
+-- Check size of void * - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Project name is: libcaer
+-- Project version is: 3.2.1
+-- Build type is: Release
+-- Compiler is Clang: FALSE
+-- Compiler is GCC: TRUE
+-- Compiler is IntelCC: FALSE
+-- Compiler is MS VisualC: FALSE
+-- OS is Unix: TRUE
+-- OS is Linux: TRUE
+-- OS is MacOS X: FALSE
+-- OS is Windows: FALSE
+-- System is big-endian: 0
+-- Thread support is PThreads: TRUE
+-- Thread support is Win32 Threads: FALSE
+-- Thread support libraries: -lpthread
+-- C flags are:  -pedantic -Wall -Wextra -Wunused -Wundef -Wformat=2 -Wuninitialized -Winit-self -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wdouble-promotion -Wshadow -Wconversion -Wstrict-overflow=5 -Wlogical-op -Wduplicated-cond -Wduplicated-branches  -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wjump-misses-init
+-- CXX flags are:  -pedantic -Wall -Wextra -Wunused -Wundef -Wformat=2 -Wuninitialized -Winit-self -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wdouble-promotion -Wshadow -Wconversion -Wstrict-overflow=5 -Wlogical-op -Wduplicated-cond -Wduplicated-branches  -Wold-style-cast -Wzero-as-null-pointer-constant
+-- Final install bindir is: /home/egronda/sunfest_2019/src/catkin_ws/devel/bin
+-- Final install libdir is: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib
+-- Final install includedir is: /home/egronda/sunfest_2019/src/catkin_ws/devel/include
+-- Final local prefix is: /home/egronda/sunfest_2019/src/catkin_ws/devel
+-- Base libraries: m;-lpthread
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- Checking for module 'libusb-1.0>=1.0.17'
+--   Found libusb-1.0, version 1.0.21
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build
+[ 60%] [34m[1mPerforming build step for 'libcaer_src'[0m
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+[35m[1mScanning dependencies of target caer[0m
+[  7%] [32mBuilding C object src/CMakeFiles/caer.dir/ringbuffer.c.o[0m
+[ 14%] [32mBuilding C object src/CMakeFiles/caer.dir/log.c.o[0m
+[ 21%] [32mBuilding C object src/CMakeFiles/caer.dir/frame_utils.c.o[0m
+[ 28%] [32mBuilding C object src/CMakeFiles/caer.dir/filters_dvs_noise.c.o[0m
+[ 35%] [32mBuilding C object src/CMakeFiles/caer.dir/usb_utils.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/usb_utils.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/usb_utils.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 42%] [32mBuilding C object src/CMakeFiles/caer.dir/autoexposure.c.o[0m
+[ 50%] [32mBuilding C object src/CMakeFiles/caer.dir/device_discover.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/data_exchange.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/container_generation.h:8[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/device_discover.c:3[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 57%] [32mBuilding C object src/CMakeFiles/caer.dir/device.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/data_exchange.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/container_generation.h:8[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/device.c:3[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 64%] [32mBuilding C object src/CMakeFiles/caer.dir/dvs128.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/data_exchange.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/container_generation.h:8[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.h:7[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:[m[K In function ‘[01m[Kdvs128EventTranslator[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:567:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ static void [01;35m[Kdvs128EventTranslator[m[K(void *vhd, const uint8_t *buffer, size_t bytesSent) {
+             [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:567:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:567:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:[m[K In function ‘[01m[Kdvs128DataStart[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ bool [01;35m[Kdvs128DataStart[m[K(caerDeviceHandle cdh, void (*dataNotifyIncrease)(void *ptr), void (*dataNotifyDecrease)(void *ptr),
+      [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:467:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:[m[K In function ‘[01m[Kdvs128DataStop[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:525:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ bool [01;35m[Kdvs128DataStop[m[K(caerDeviceHandle cdh) {
+      [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs128.c:525:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[ 71%] [32mBuilding C object src/CMakeFiles/caer.dir/davis.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/data_exchange.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/container_generation.h:8[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:[m[K In function ‘[01m[KfreeAllDataMemory[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.h:4:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ static inline void [01;35m[KfreeAllDataMemory[m[K(davisCommonState state) {
+                    [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:[m[K In function ‘[01m[KdavisEventTranslator[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:507:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ static void [01;35m[KdavisEventTranslator[m[K(void *vhd, const uint8_t *buffer, size_t bytesSent) {
+             [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:507:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:507:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:507:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis.c:507:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[ 78%] [32mBuilding C object src/CMakeFiles/caer.dir/dynapse.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/data_exchange.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/container_generation.h:8[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.h:7[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:[m[K In function ‘[01m[KdynapseEventTranslator[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1422:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ static void [01;35m[KdynapseEventTranslator[m[K(void *vhd, const uint8_t *buffer, size_t bytesSent) {
+             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1422:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1422:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:[m[K In function ‘[01m[KdynapseDataStart[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ bool [01;35m[KdynapseDataStart[m[K(caerDeviceHandle cdh, void (*dataNotifyIncrease)(void *ptr),
+      [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1320:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:[m[K In function ‘[01m[KdynapseDataStop[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1383:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ bool [01;35m[KdynapseDataStop[m[K(caerDeviceHandle cdh) {
+      [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dynapse.c:1383:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[ 85%] [32mBuilding C object src/CMakeFiles/caer.dir/dvs132s.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/data_exchange.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/container_generation.h:8[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.h:7[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:[m[K In function ‘[01m[Kdvs132sEventTranslator[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1101:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ static void [01;35m[Kdvs132sEventTranslator[m[K(void *vhd, const uint8_t *buffer, size_t bufferSize) {
+             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1101:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1101:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1101:13:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:[m[K In function ‘[01m[Kdvs132sDataStart[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ bool [01;35m[Kdvs132sDataStart[m[K(caerDeviceHandle cdh, void (*dataNotifyIncrease)(void *ptr),
+      [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:926:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/device_discover.h:11[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:[m[K In function ‘[01m[Kdvs132sDataStop[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1037:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ bool [01;35m[Kdvs132sDataStop[m[K(caerDeviceHandle cdh) {
+      [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1037:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/dvs132s.c:1037:6:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[ 92%] [32mBuilding C object src/CMakeFiles/caer.dir/davis_rpi.c.o[0m
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/data_exchange.h:12:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/container_generation.h:8[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:[m[K In function ‘[01m[Kthrd_create[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/c11threads_posix.h:43:32:[m[K [01;35m[Kwarning: [m[Kunknown option after ‘[01m[K#pragma GCC diagnostic[m[K’ kind [[01;35m[K-Wpragmas[m[K]
+ #pragma GCC diagnostic ignored [01;35m[K"-Wcast-function-type"[m[K
+                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:[m[K In function ‘[01m[KfreeAllDataMemory[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.h:4:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ static inline void [01;35m[KfreeAllDataMemory[m[K(davisCommonState state) {
+                    [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:195:20:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+In file included from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/frame.h:19:0[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/davis.h:10[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_common.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.h:4[m[K,
+                 from [01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:1[m[K:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:[m[K In function ‘[01m[KgpioThreadRun[m[K’:
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/include/libcaer/devices/../events/common.h:416:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when reducing constant in comparison [[01;35m[K-Wstrict-overflow[m[K]
+  if ([01;35m[Kn < 0 || n >= caerEventPacketHeaderGetEventNumber(headerPtr)[m[K) {
+      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:370:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+ static int [01;35m[KgpioThreadRun[m[K(void *handlePtr) {
+            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:370:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:370:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:370:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[01m[K/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src/src/davis_rpi.c:370:12:[m[K [01;35m[Kwarning: [m[Kassuming signed overflow does not occur when changing X +- C1 cmp C2 to X cmp C2 -+ C1 [[01;35m[K-Wstrict-overflow[m[K]
+[100%] [32m[1mLinking C shared library libcaer.so[0m
+[100%] Built target caer
+[ 70%] [34m[1mPerforming install step for 'libcaer_src'[0m
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+[100%] Built target caer
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/share/caer/caer-base.cmake
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/pkgconfig/libcaer.pc
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/cmake/libcaer/libcaer-exports.cmake
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/cmake/libcaer/libcaer-exports-release.cmake
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/cmake/libcaer/libcaerConfigVersion.cmake
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/cmake/libcaer/libcaerConfig.cmake
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/libcaer.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/log.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/network.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/portable_endian.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/frame_utils.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/ringbuffer.h
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/frame.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/polarity.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/spike.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/packetContainer.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/special.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/imu9.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/imu6.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/events/common.h
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/device.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/davis.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/usb.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/serial.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/dynapse.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/dvs132s.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/device_discover.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/edvs.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/devices/dvs128.h
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/filters
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaer/filters/dvs_noise.h
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/libcaer.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/network.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/ringbuffer.hpp
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/polarity.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/packetContainer.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/special.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/imu6.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/common.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/spike.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/utils.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/frame.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/events/imu9.hpp
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/device_discover.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/dvs132s.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/edvs.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/device.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/dvs128.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/usb.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/dynapse.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/serial.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/devices/davis.hpp
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/filters
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/include/libcaercpp/filters/dvs_noise.hpp
+-- Installing: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/libcaer.so.3.2.1
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/libcaer.so.3
+-- Up-to-date: /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/libcaer.so
+-- Set runtime path of "/home/egronda/sunfest_2019/src/catkin_ws/devel/lib/libcaer.so.3.2.1" to "/home/egronda/sunfest_2019/src/catkin_ws/devel/lib"
+[ 80%] [34m[1mCompleted 'libcaer_src'[0m
+[ 80%] Built target libcaer_src
+[35m[1mScanning dependencies of target libcaer_catkin[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/libcaer_catkin.dir/src/dependency_tracker.cc.o[0m
+[100%] [32m[1mLinking CXX shared library /home/egronda/sunfest_2019/src/catkin_ws/devel/lib/liblibcaer_catkin.so[0m
+[100%] Built target libcaer_catkin

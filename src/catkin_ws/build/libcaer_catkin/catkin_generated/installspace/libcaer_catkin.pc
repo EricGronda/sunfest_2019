@@ -1,0 +1,8 @@
+prefix=/home/egronda/sunfest_2019/src/catkin_ws/install
+
+Name: libcaer_catkin
+Description: Description of libcaer_catkin
+Version: 0.0.0
+Cflags: -I/home/egronda/sunfest_2019/src/catkin_ws/install/include
+Libs: -L/home/egronda/sunfest_2019/src/catkin_ws/install/lib -llibcaer_catkin
+Requires: roscpp

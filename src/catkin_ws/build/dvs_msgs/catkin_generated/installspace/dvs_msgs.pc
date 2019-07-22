@@ -1,0 +1,8 @@
+prefix=/home/egronda/sunfest_2019/src/catkin_ws/install
+
+Name: dvs_msgs
+Description: Description of dvs_msgs
+Version: 0.0.0
+Cflags: -I/home/egronda/sunfest_2019/src/catkin_ws/install/include
+Libs: -L/home/egronda/sunfest_2019/src/catkin_ws/install/lib 
+Requires: message_runtime std_msgs

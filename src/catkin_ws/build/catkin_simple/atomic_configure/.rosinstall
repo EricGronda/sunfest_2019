@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/egronda/sunfest_2019/src/catkin_ws/devel/setup.sh

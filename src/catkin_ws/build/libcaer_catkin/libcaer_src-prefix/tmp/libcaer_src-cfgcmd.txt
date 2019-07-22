@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX:PATH=/home/egronda/sunfest_2019/src/catkin_ws/devel;-DCMAKE_BUILD_TYPE:STRING=Release;-DBUILD_SHARED_LIBS=ON;-DUDEV_INSTALL=0;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

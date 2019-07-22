@@ -1,0 +1,59 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_27245/fast"
+make[3]: Entering directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_27245.dir/build.make CMakeFiles/cmTC_27245.dir/build
+make[4]: Entering directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27245.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_27245.dir/CheckSymbolExists.c.o   -c /home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_27245
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27245.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_27245.dir/CheckSymbolExists.c.o  -o cmTC_27245 
+CMakeFiles/cmTC_27245.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_27245.dir/build.make:97: recipe for target 'cmTC_27245' failed
+make[4]: *** [cmTC_27245] Error 1
+make[4]: Leaving directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_27245/fast' failed
+make[3]: *** [cmTC_27245/fast] Error 2
+make[3]: Leaving directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+
+File /home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0622d/fast"
+make[3]: Entering directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0622d.dir/build.make CMakeFiles/cmTC_0622d.dir/build
+make[4]: Entering directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0622d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu11 -o CMakeFiles/cmTC_0622d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0622d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0622d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0622d.dir/CheckFunctionExists.c.o  -o cmTC_0622d -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0622d.dir/build.make:97: recipe for target 'cmTC_0622d' failed
+make[4]: *** [cmTC_0622d] Error 1
+make[4]: Leaving directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0622d/fast' failed
+make[3]: *** [cmTC_0622d/fast] Error 2
+make[3]: Leaving directory '/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-build/CMakeFiles/CMakeTmp'
+
+

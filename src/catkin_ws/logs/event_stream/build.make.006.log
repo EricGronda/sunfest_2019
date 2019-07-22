@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target event_parser[0m
+make[2]: *** No rule to make target 'CMakeFiles/event_parser.dir/build'.  Stop.
+CMakeFiles/Makefile2:547: recipe for target 'CMakeFiles/event_parser.dir/all' failed
+make[1]: *** [CMakeFiles/event_parser.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

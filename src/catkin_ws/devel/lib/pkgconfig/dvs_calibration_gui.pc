@@ -1,0 +1,8 @@
+prefix=/home/egronda/sunfest_2019/src/catkin_ws/devel
+
+Name: dvs_calibration_gui
+Description: Description of dvs_calibration_gui
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/egronda/sunfest_2019/src/catkin_ws/devel/lib 
+Requires: std_msgs sensor_msgs

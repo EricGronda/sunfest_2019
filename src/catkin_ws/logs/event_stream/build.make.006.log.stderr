@@ -1,0 +1,3 @@
+make[2]: *** No rule to make target 'CMakeFiles/event_parser.dir/build'.  Stop.
+make[1]: *** [CMakeFiles/event_parser.dir/all] Error 2
+make: *** [all] Error 2

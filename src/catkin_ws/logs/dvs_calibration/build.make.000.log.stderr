@@ -1,0 +1,32 @@
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:[m[K In member function ‘[01m[Kbool CirclesGridFinder::isDetectionCorrect()[m[K’:
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:666:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::CirclesGridFinderParameters[m[K’ has not been declared
+     case cv::[01;31m[KCirclesGridFinderParameters[m[K::SYMMETRIC_GRID:
+              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:686:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::CirclesGridFinderParameters[m[K’ has not been declared
+     case cv::[01;31m[KCirclesGridFinderParameters[m[K::ASYMMETRIC_GRID:
+              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/camera_dvs.dir/src/circlesgrid.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:[m[K In member function ‘[01m[Kbool CirclesGridFinder::isDetectionCorrect()[m[K’:
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:666:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::CirclesGridFinderParameters[m[K’ has not been declared
+     case cv::[01;31m[KCirclesGridFinderParameters[m[K::SYMMETRIC_GRID:
+              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:686:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::CirclesGridFinderParameters[m[K’ has not been declared
+     case cv::[01;31m[KCirclesGridFinderParameters[m[K::ASYMMETRIC_GRID:
+              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/stereo.dir/src/circlesgrid.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:[m[K In member function ‘[01m[Kbool CirclesGridFinder::isDetectionCorrect()[m[K’:
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:666:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::CirclesGridFinderParameters[m[K’ has not been declared
+     case cv::[01;31m[KCirclesGridFinderParameters[m[K::SYMMETRIC_GRID:
+              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_calibration/src/circlesgrid.cpp:686:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::CirclesGridFinderParameters[m[K’ has not been declared
+     case cv::[01;31m[KCirclesGridFinderParameters[m[K::ASYMMETRIC_GRID:
+              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mono.dir/src/circlesgrid.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/camera_dvs.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/stereo.dir/all] Error 2
+make[1]: *** [CMakeFiles/mono.dir/all] Error 2
+make: *** [all] Error 2

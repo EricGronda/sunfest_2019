@@ -1,0 +1,12 @@
+prefix=/home/egronda/sunfest_2019/src/catkin_ws/devel
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libcaer
+Description: Minimal C library to access, configure and get data from neuromorphic sensors and processors.
+Version: 3.2.1
+Requires.private: libusb-1.0 >= 1.0.17
+Libs: -L${libdir} -lcaer
+Libs.private: -lm -lpthread
+Cflags: -I${includedir}

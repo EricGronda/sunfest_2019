@@ -1,0 +1,159 @@
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_eus[0m
+[35m[1mScanning dependencies of target bond_generate_messages_py[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target bond_generate_messages_lisp[0m
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target nodelet_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target bond_generate_messages_py
+[  0%] Built target nodelet_generate_messages_cpp
+[  0%] Built target bond_generate_messages_lisp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target bond_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_py[0m
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_gencfg[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  0%] Built target dvs_msgs_generate_messages_py
+[  0%] Built target bond_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target dvs_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[35m[1mScanning dependencies of target dvs_ros_driver_gencfg[0m
+[35m[1mScanning dependencies of target bond_generate_messages_cpp[0m
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[  0%] Built target bond_generate_messages_cpp
+[ 14%] [34m[1mGenerating dynamic reconfigure files from cfg/DVS_ROS_Driver.cfg: /home/egronda/sunfest/src/catkin_ws/devel/include/dvs_ros_driver/DVS_ROS_DriverConfig.h /home/egronda/sunfest/src/catkin_ws/devel/lib/python2.7/dist-packages/dvs_ros_driver/cfg/DVS_ROS_DriverConfig.py[0m
+[ 14%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_eus[0m
+[ 14%] Built target geometry_msgs_generate_messages_lisp
+[ 14%] Built target geometry_msgs_generate_messages_cpp
+[ 14%] Built target rosgraph_msgs_generate_messages_py
+[ 14%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 14%] Built target rosgraph_msgs_generate_messages_lisp
+[ 14%] Built target std_msgs_generate_messages_eus
+[ 14%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_nodejs[0m
+[ 14%] Built target dvs_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[ 14%] Built target dvs_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[ 14%] Built target dynamic_reconfigure_generate_messages_nodejs
+[ 14%] Built target rosgraph_msgs_generate_messages_eus
+[ 14%] Built target roscpp_generate_messages_nodejs
+[ 14%] Built target dvs_msgs_generate_messages_cpp
+[ 14%] Built target std_msgs_generate_messages_py
+[ 14%] Built target roscpp_generate_messages_py
+[ 14%] Built target geometry_msgs_generate_messages_eus
+[ 14%] Built target roscpp_generate_messages_eus
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[ 14%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target bond_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[ 14%] Built target roscpp_generate_messages_cpp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[ 14%] Built target nodelet_generate_messages_py
+[ 14%] Built target roscpp_generate_messages_lisp
+[ 14%] Built target geometry_msgs_generate_messages_nodejs
+[ 14%] Built target std_msgs_generate_messages_cpp
+Generating reconfiguration files for DVS_ROS_Driver in dvs_ros_driver
+[ 14%] Built target std_msgs_generate_messages_lisp
+[ 14%] Built target bond_generate_messages_eus
+Wrote header file in /home/egronda/sunfest/src/catkin_ws/devel/include/dvs_ros_driver/DVS_ROS_DriverConfig.h
+[ 14%] Built target sensor_msgs_generate_messages_cpp
+[ 14%] Built target dvs_ros_driver_gencfg
+[35m[1mScanning dependencies of target dvs_ros_driver_nodelet[0m
+[35m[1mScanning dependencies of target dvs_ros_driver[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/dvs_ros_driver_nodelet.dir/src/driver_nodelet.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/dvs_ros_driver_nodelet.dir/src/driver.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/dvs_ros_driver.dir/src/driver_node.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/dvs_ros_driver.dir/src/driver.cpp.o[0m
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/include/dvs_ros_driver/driver.h:5[m[K,
+                 from [01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:3[m[K:
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:[m[K In constructor ‘[01m[Kdvs_ros_driver::DvsRosDriver::DvsRosDriver(ros::NodeHandle&, ros::NodeHandle)[m[K’:
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:49:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct caer_dvs128_info[m[K’ has no member named ‘[01m[KlogicVersion[m[K’
+            dvs128_info_.[01;31m[Kl[m[KogicVersion);
+                         [01;31m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:348:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:47:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   [01;36m[KR[m[KOS_INFO("%s --- ID: %d, Master: %d, DVS X: %d, DVS Y: %d, Logic: %d.\n", dvs128_info_.deviceString,
+   [01;36m[K^[m[K
+CMakeFiles/dvs_ros_driver.dir/build.make:86: recipe for target 'CMakeFiles/dvs_ros_driver.dir/src/driver.cpp.o' failed
+make[2]: *** [CMakeFiles/dvs_ros_driver.dir/src/driver.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/include/dvs_ros_driver/driver.h:5[m[K,
+                 from [01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:3[m[K:
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:[m[K In constructor ‘[01m[Kdvs_ros_driver::DvsRosDriver::DvsRosDriver(ros::NodeHandle&, ros::NodeHandle)[m[K’:
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:49:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct caer_dvs128_info[m[K’ has no member named ‘[01m[KlogicVersion[m[K’
+            dvs128_info_.[01;31m[Kl[m[KogicVersion);
+                         [01;31m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:348:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/egronda/sunfest/src/catkin_ws/src/rpg_dvs_ros/dvs_ros_driver/src/driver.cpp:47:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   [01;36m[KR[m[KOS_INFO("%s --- ID: %d, Master: %d, DVS X: %d, DVS Y: %d, Logic: %d.\n", dvs128_info_.deviceString,
+   [01;36m[K^[m[K
+CMakeFiles/dvs_ros_driver_nodelet.dir/build.make:86: recipe for target 'CMakeFiles/dvs_ros_driver_nodelet.dir/src/driver.cpp.o' failed
+make[2]: *** [CMakeFiles/dvs_ros_driver_nodelet.dir/src/driver.cpp.o] Error 1
+CMakeFiles/Makefile2:113: recipe for target 'CMakeFiles/dvs_ros_driver_nodelet.dir/all' failed
+make[1]: *** [CMakeFiles/dvs_ros_driver_nodelet.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+CMakeFiles/Makefile2:196: recipe for target 'CMakeFiles/dvs_ros_driver.dir/all' failed
+make[1]: *** [CMakeFiles/dvs_ros_driver.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

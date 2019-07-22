@@ -1,0 +1,8 @@
+prefix=/home/egronda/sunfest_2019/src/catkin_ws/devel
+
+Name: catkin_simple
+Description: Description of catkin_simple
+Version: 0.1.1
+Cflags: 
+Libs: -L/home/egronda/sunfest_2019/src/catkin_ws/devel/lib 
+Requires: catkin

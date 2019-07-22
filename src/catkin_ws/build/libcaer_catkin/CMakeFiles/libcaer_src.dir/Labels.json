@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/CMakeFiles/libcaer_src"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/CMakeFiles/libcaer_src.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/CMakeFiles/libcaer_src-complete.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-stamp/libcaer_src-install.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-stamp/libcaer_src-mkdir.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-stamp/libcaer_src-download.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-stamp/libcaer_src-update.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-stamp/libcaer_src-patch.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-stamp/libcaer_src-configure.rule"
+		},
+		{
+			"file" : "/home/egronda/sunfest_2019/src/catkin_ws/build/libcaer_catkin/libcaer_src-prefix/src/libcaer_src-stamp/libcaer_src-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libcaer_src"
+		],
+		"name" : "libcaer_src"
+	}
+}

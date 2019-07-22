@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target _dvs_msgs_generate_messages_check_deps_Event[0m
+[35m[1mScanning dependencies of target _dvs_msgs_generate_messages_check_deps_EventArray[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _dvs_msgs_generate_messages_check_deps_EventArray
+[  0%] Built target _dvs_msgs_generate_messages_check_deps_Event
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages_eus[0m
+[ 16%] Built target dvs_msgs_generate_messages_cpp
+[ 33%] Built target dvs_msgs_generate_messages_nodejs
+[ 50%] Built target dvs_msgs_generate_messages_lisp
+[100%] Built target dvs_msgs_generate_messages_py
+[100%] Built target dvs_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target dvs_msgs_generate_messages[0m
+[100%] Built target dvs_msgs_generate_messages

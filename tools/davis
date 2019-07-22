@@ -1,0 +1,167 @@
+#!/bin/bash
+
+#--------------------------------------------------------------
+# DAVIS Commands:
+#	init		creates a roscore
+#	run		activates the camera in rqt_image_view
+#			both raw image and dvs_renderer
+##	raw		rqt_image_view with raw image only
+##	render		rqt_image_view with renderer only
+#	record		records data to a bag file
+#	play		plays a video from a bag file
+#	calibrate	calibrates the camera
+#	stop		cancels all tmux processes
+
+#--------------------------------------------------------------
+# Create a roscore explicitly (used for saving data)
+#	davis init
+init() {
+	source ~/sunfest/src/catkin_ws/devel/setup.bash
+
+	tmux new -d -s init
+	tmux select-window -t init:0
+	tmux send-keys 'roscore' 'C-m'
+}
+
+#--------------------------------------------------------------
+# Open the camera in rqt_image_view with both raw image and dvs
+#	davis run
+run() {
+	source ~/sunfest/src/catkin_ws/devel/setup.bash # may need to update this location
+
+	# Create a new tmux session
+	tmux new -d -s run
+	tmux select-window -t run:0
+
+	# load roscore
+        tmux send-keys 'roscore' 'C-m'
+
+	# run davis driver
+	tmux split-window -v 
+	tmux send-keys 'cd sunfest/src/catkin_ws/' 'C-m'
+	tmux send-keys 'source devel/setup.bash' 'C-m'
+	tmux send-keys 'roslaunch davis_ros_driver mono.launch' 'C-m'
+
+	# run dvs renderer
+	tmux split-window -v
+	tmux send-keys 'cd sunfest/src/catkin_ws/' 'C-m'
+        tmux send-keys 'source devel/setup.bash' 'C-m'
+	tmux send-keys 'roslaunch dvs_renderer renderer_mono.launch' 'C-m'
+
+	# LAUNCH FILE HANDLES THIS
+	## open rqt image view
+	#tmux split-window -v
+	#sleep 2 # let renderer load
+	#tmux send-keys 'rqt_image_view' 'C-m'
+}
+
+#--------------------------------------------------------------
+# Record the camera that is open for a specified amount of time
+#	davis record [duration]
+record() {
+        # Create a new tmux session
+        tmux new -d -s record
+        tmux select-window -t record:0
+
+
+	# record indefinitely
+	if [ -z "$1" ]; then
+	        tmux send-keys 'rosbag record -o ~/sunfest/src/bagfiles/davis /davis/image_raw /dvs_renderer' 'C-m'
+	
+	# duration specified
+	else
+       	 	tmux send-keys 'rosbag record -o ~/sunfest/src/bagfiles/davis --duration=' "$1" ' /davis/image_raw /davis/events /davis/imu' 'C-m'
+       	 	#tmux send-keys 'rosbag record -o ~/sunfest/src/bagfiles/davis --duration=' "$1" ' -a' 'C-m' 
+		sleep "$1"
+		#sleep 10
+		#close
+	fi
+}
+
+#--------------------------------------------------------------
+# Plays a video from a specified bag file
+#	davis play [video.bag]
+play() {
+	if [ -z "$1" ]; then
+	        echo Please enter a bag file to play
+	
+	else
+	        # Create a new tmux session
+	        tmux new -d -s play
+        	tmux select-window -t play:0
+
+	        # load video
+        	tmux send-keys 'rosbag play -l ' "$1" 'C-m'
+
+		# run dvs renderer
+		tmux split-window -v
+		tmux send-keys 'cd sunfest/src/catkin_ws/' 'C-m'
+		tmux send-keys 'source devel/setup.bash' 'C-m'
+		tmux send-keys 'roslaunch dvs_renderer renderer_mono.launch' 'C-m'
+
+		# run image view
+        	tmux split-window -v
+        	tmux send-keys 'rqt_image_view' 'C-m'
+
+	fi
+}
+
+#--------------------------------------------------------------
+# Calibrate DAVIS 346 given a bag file of raw images:
+# 	davis calibrate [raw_images.bag]
+calibrate() {
+	echo DAVIS is calibrating. Files can be found under sunfest/src/calibrate_files.
+	kalibr_calibrate_cameras --bag $1 --topics /davis/image_raw --models pinhole-equi --target ~/sunfest/src/calibrate_files/checkerboard.yaml
+	mv report-cam-$1.pdf results-cam-$1.txt camchain-$1.yaml ~/sunfest/src/calibrate_files
+}
+
+#--------------------------------------------------------------
+# Cancels tmux processes
+# 	davis stop (all)
+close() {
+	tmux kill-session -t run 
+	tmux kill-session -t record
+	tmux kill-session -t play 
+
+	if [ \( "$1" == 'core' \) -o \( "$1" == 'all' \) ]; then
+		tmux kill-session -t init 
+	fi
+}
+
+#--------------------------------------------------------------
+# Shows current running servers
+#      	davis status
+status_davis() {
+	tmux list-session
+}
+
+#--------------------------------------------------------------
+# Main control switch statement
+subcommand=$1
+case $subcommand in
+	"init")
+		init
+		;;
+	"run")
+		run
+		;;
+	"record")
+		record "$2"
+		;;
+	"play")
+		play "$2"
+		;;
+	"calibrate")
+		calibrate "$2"
+		;;
+	"close" | "stop")
+		close "$2"
+		;;	
+	"status")
+		status_davis
+		;;
+    	*)
+		echo "Error: '$subcommand' is not a known subcommand." >&2
+        	exit 1
+               	;;
+esac
