@@ -15,21 +15,27 @@
 %-------------------------------------------------------------------
 % event_histogram()
 % input:    matbag, extracted ros data
+%           duration, time (in microsecs) to explore
 %           time_start, (optional) start point for video cropping
 %           interval, time (in microsecs) to group each event
-% output:   plt, information from the final histogram
-function plt = event_histogram( matbag , time_start , interval)
-    if nargin < 1
-        matbag = "~/sunfest/src/matbag_ws/matlab_test2.mat";
-    end
-    
+% output:   bins, information from the final histogram
+function bins = event_histogram( matbag , duration , time_start , interval)
+
     % check arguments
     if nargin < 2
-        time_start = 5;
+        duration = 1000e-6;
+    else
+        duration = duration * 10^-6;
+    end
+    
+    if nargin < 3
+        time_start = 3;
     end
         
-    if nargin < 3
+    if nargin < 4
         interval = 10e-6;
+    else
+        interval = interval * 10^-6;
     end 
 
     % read in rosbag data, normalize time (note bag is stored in secs)
@@ -44,7 +50,6 @@ function plt = event_histogram( matbag , time_start , interval)
     end
     
     % group events by time interval in time range
-    duration = 300e-6; % (sec)
     timer = bag.events(3,i);
     tracker = time_start + interval;
     bins = zeros( (duration * 10^6) / (interval * 10^6) , 1);
@@ -67,7 +72,7 @@ function plt = event_histogram( matbag , time_start , interval)
     end    
     
     % set up and display plot
-    plt = bar(bins);
+    %plt = bar(bins);
     
 end
   
