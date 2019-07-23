@@ -1,4 +1,4 @@
-# Real-time Event Based Catadiotirc Stereo
+# Real-time Event Based Catadioptric Stereo
 
 ## Abstract
 
