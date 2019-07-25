@@ -21,7 +21,7 @@ GREEN = (0 , 255 , 0)
 WHITE = (255, 255, 255)
 
 PX_WIDTH = 346
-PX_HEIGHT = 240
+PX_HEIGHT = 260
 
 LEFT = 0
 CENTER = 1
@@ -29,8 +29,8 @@ RIGHT = 2
 
 SEARCH = 5
 
-UPSCALE_PERCENT = 300
-FRAME_DELAY = 1000
+UPSCALE_PERCENT = 250
+FRAME_DELAY = 10000 # millisecs
 
 EVENT_WINDOW = 10000 # nanosecs
 
@@ -81,14 +81,15 @@ def pickLines( img ):
 
 #####################################################################
 # displayEvents() shows the events of an image in gif format
-# input:          gen; /davis/events generator
+# input:          image_raw; /davis/image_raw generator
+#                 events; /davis/events generator
 #                 frame; image frame to display points on
 #                 pts; matrix of line points (topL, botL, topR, botR)
 # output:         none; displays in window
-def displayEvents( gen , frame , pts ):
-    
-    for topic, msg, t in gen:
-    
+def displayEvents( image_raw, events , frame , pts ):
+
+    for eventTopic, msg, eventT in events:
+
         # create a new empty matrix
         img = frame.copy()
 
@@ -99,37 +100,40 @@ def displayEvents( gen , frame , pts ):
 
         # fill with event points
         for event in msg.events:
+            loc = findMirror(event , pts)
+
             # choose color
-            if findMirror(event , pts) == LEFT:
+            if loc == LEFT:
                 color = RED
                 left.append( event )
-            elif findMirror(event , pts) == CENTER:
+
+            elif loc == CENTER:
                 color = GREEN
                 center.append( event )
-            elif findMirror(event , pts) == RIGHT:
+
+                # only correspond from center - side rows too far apart
+                correspond( img , event , left , center , right , pts ) 
+
+            elif loc == RIGHT:
                 color = BLUE
                 right.append( event )
+
             else:
-                color = WHITE
-
-            correspond( img , event , left , center , right , pts ) 
-
-            #if event.polarity:
-            #    color = BLUE
-
+                color = WHITE # unknown pts
+            
             # draw circles
-            cv2.circle(img , (event.x , event.y) , 2 , color, -1)
+            cv2.circle(img , (event.x , event.y) , 1 , color, -1)
 
-        # upscale image
-        scale_percent = UPSCALE_PERCENT # percent of original size
-        width = int(img.shape[1] * scale_percent / 100)
-        height = int(img.shape[0] * scale_percent / 100)
-        dim = (width, height)
-        # resize image
-        resized = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+        # upscale raw, event image
+        eventImg = upscale( img )
+        rawImg = getRawImage( image_raw )
+        rawImg = upscale( rawImg )
+
+        # stack with raw image
+        imgStack = np.hstack((rawImg, eventImg))
 
         # display image
-        cv2.imshow("Events Gif", resized)
+        cv2.imshow("Events Gif", imgStack)
         cv2.waitKey(FRAME_DELAY)
         
     cv2.destroyAllWindows()
@@ -175,27 +179,65 @@ def findMirror( event , pts ):
 def correspond( img, event, left, center, right , pts):
     # immediately exclude mirror event is in
     location = findMirror( event , pts )
+    
+    '''
     mirrors = []
 
+    # each mirror only needs to look at 1 other, 
+    # so order is L->C->R->L->...
     if location == CENTER:
-        mirrors = [ left , right ]
+        mirror = right
     elif location == LEFT:
-        mirrors = [ center , right ]
+        mirror = center
+    elif location == RIGHT:
+        mirror = left
     else:
-        mirrors = [ left , center ]
+        return
+    '''
 
     # Search +/- 5 rows for corresonding event (approx.)
-    for compare in mirrors[0]:
-        # match polarity, rows, time
-        if (event.y in range( compare.y - SEARCH, compare.y + SEARCH )
-            and event.polarity == compare.polarity
-            and abs(event.ts.to_nsec() - compare.ts.to_nsec()) 
-                <= EVENT_WINDOW):
-            
-            # draw a line for a match
-            cv2.line(img, (event.x , event.y) , (compare.x , compare.y), 
-                    WHITE, 1)
-    
+    for mirror in [left , right]:
+        for compare in mirror:
+            if compareEvents( event , compare ):
+                # draw a line for a match
+                cv2.line(img, (event.x , event.y) , (compare.x , compare.y), 
+                         WHITE, 1)
+
+######################################################################
+# compareEvents() determines if 2 events are correspondant
+# input:          a; first event to compare
+#                 b; second event to compare
+# output:         a bool; true if equal, false if not
+def compareEvents( a , b ):
+    if ( a.y in range( b.y - SEARCH, b.y + SEARCH )
+         and a.polarity == b.polarity
+         and abs(a.ts.to_nsec() - b.ts.to_nsec()) <= EVENT_WINDOW):
+        return True
+
+    return False
+
+######################################################################
+# upscale() scales up an image to a constant specified percent
+# input:    img; image to scale up
+# output:   resized; scaled up image
+def upscale( img ):
+    width = int(img.shape[1] * UPSCALE_PERCENT / 100)
+    height = int(img.shape[0] * UPSCALE_PERCENT / 100)
+    dim = (width, height)
+    resized = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+    return resized
+
+#####################################################################
+# getRawImage() uses CVBridge to get the raw image from the rosbag
+#               (also converts to RGB)
+# input:        image_raw; image_raw topic generator
+# output:       cv_image; next raw image
+def getRawImage( image_raw ):
+    topic, msg, t = next(image_raw)
+    cv_image = CvBridge().imgmsg_to_cv2(msg, desired_encoding="passthrough")
+    cv_image = cv2.cvtColor(cv_image, cv2.COLOR_GRAY2BGR)
+    return cv_image
+
 def main():
     # NOTE: interesting stuff moreso at frame 200
     bag = rosbag.Bag('../bagfiles/mount_1/calibrate.bag') 
@@ -203,38 +245,18 @@ def main():
     print('------------------------------------------------------------\n')
 
     # get image from generator
-    gen = bag.read_messages(topics=['/davis/image_raw']) 
-    topic, msg, t = next(gen)
-
-    # convert to cv image
-    bridge = CvBridge()
-    cv_image = bridge.imgmsg_to_cv2(msg, desired_encoding="passthrough")
+    image_raw = bag.read_messages(topics=['/davis/image_raw']) 
+    cv_image = getRawImage( image_raw ) 
 
     # divide image into left, right, center
     frame, pts = pickLines( cv_image )
-    imshow( frame )    
 
-    # select random event points in center
-    gen = bag.read_messages(topics=['/davis/events'])
-    displayEvents(gen , frame, pts)
+    # create new generators
+    events = bag.read_messages(topics=['/davis/events']) 
+    image_raw = bag.read_messages(topics=['/davis/image_raw'])
 
-    '''
-    topic, msg, t = next(next(gen))
-
-    # plot all points test
-    for event in msg.events:
-
-        # choose color
-        color = RED
-        if event.polarity:
-            color = BLUE
-
-        # draw circles
-        cv2.circle(cv_image , (event.x , event.y) , 2 , YELLOW, -1)
-    imshow(cv_image)
-    '''
-
-    # select possible matches in left and right based on events
+    # show events, draw correspondences
+    displayEvents(image_raw , events , frame, pts)
 
     # close the bag
     bag.close()
