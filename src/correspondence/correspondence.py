@@ -27,6 +27,8 @@ LEFT = 0
 CENTER = 1
 RIGHT = 2
 
+SEARCH = 5
+
 ####################################################################
 # imshow() displays a cv image to the screen
 # input:   img; a cv image
@@ -85,21 +87,33 @@ def displayEvents( gen , frame , pts ):
         # create a new empty matrix
         img = frame.copy()
 
+        # store events by mirror
+        left = []
+        right = []
+        center = []
+
+        # limit correspondences to 1 in every x events
+        counter = 0
+
         # fill with event points
         for event in msg.events:
             # choose color
             if findMirror(event , pts) == LEFT:
-                print 'color left -> RED'
                 color = RED
+                left.append( event )
             elif findMirror(event , pts) == CENTER:
-                print 'color center -> GREEN'
                 color = GREEN
+                center.append( event )
             elif findMirror(event , pts) == RIGHT:
-                print 'color right -> BLUE'
                 color = BLUE
+                right.append( event )
             else:
-                print 'color white -> UNKNOWN'
                 color = WHITE
+
+            if counter == 100:
+                correspond( img , event , left , center , right , pts ) 
+                counter = 0
+            counter += 1
 
             #if event.polarity:
             #    color = BLUE
@@ -109,7 +123,7 @@ def displayEvents( gen , frame , pts ):
 
         # display image
         cv2.imshow("Events Gif", img)
-        cv2.waitKey(1)
+        cv2.waitKey(500)
         
     cv2.destroyAllWindows()
 
@@ -124,30 +138,56 @@ def findMirror( event , pts ):
     topR = pts[2]
     botR = pts[3]
 
-    # find slopes of lines
-    leftSlope  = ( topL[1] - botL[1] ) / ( topL[0] - botL[0] )
-    rightSlope = ( botR[1] - topR[1] ) / ( botR[0] - topR[0] )
+    # find slopes of lines (y values inverted)
+    leftSlope  = -( topL[1] - botL[1] ) / ( topL[0] - botL[0] )
+    rightSlope =  ( topR[1] - botR[1] ) / ( topR[0] - botR[0] )
 
     # use point-slope formula to find x value of lines at event y
-    leftX  = ((event.y - botL[1]) / leftSlope ) + botL[0]
-    rightX = ((event.y - topR[1]) / leftSlope ) + topR[0]
-
-    print '------------------------------------------------'
-    print str(event.x) + '\t' + str(leftX) + '\t' + str(rightX)
+    leftX  = (((-event.y) - (-botL[1])) / leftSlope ) + botL[0]
+    rightX = (((-event.y) - (-botR[1])) / leftSlope ) + botR[0]
 
     # choose mirror based on x valueif left of left line, then on left mirror
-    if event.x >= leftX and event.x <= rightX:
-        print 'center'
-        return CENTER
+    #if event.x > leftX and event.x < rightX:
+    #    return CENTER
     if event.x < rightX:
-        print 'right'
         return RIGHT
     elif event.x > leftX:
-        print 'left'
         return LEFT
     else:
         return CENTER
 
+####################################################################
+# correspond() draws a line from an event to another 
+#                      corresponding event
+# input:       img; image to draw line on
+#              event; event to find correspondence of
+#              left; list of events from left
+#              center; list of events from center
+#              right; list of events from right
+# output:      img; updated image with line drawn
+def correspond( img, event, left, center, right , pts):
+    # immediately exclude mirror event is in
+    location = findMirror( event , pts )
+    mirrors = []
+
+    if location == CENTER:
+        mirrors = [ left , right ]
+    elif location == LEFT:
+        mirrors = [ center , right ]
+    else:
+        mirrors = [ left , center ]
+
+    # Search +/- 5 rows for corresonding event (approx.)
+    for compare in mirrors[0]:
+        # match polarity and rows
+        if (event.y in range( compare.y - SEARCH, compare.y + SEARCH )
+            and event.polarity == compare.polarity):
+            
+            # draw a line for a match
+            cv2.line(img, (event.x , event.y) , (compare.x , compare.y), 
+                    WHITE, 1)
+            break
+    
 def main():
     # NOTE: interesting stuff moreso at frame 200
     bag = rosbag.Bag('../bagfiles/mount_1/calibrate.bag') 
