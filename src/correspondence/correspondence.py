@@ -29,6 +29,11 @@ RIGHT = 2
 
 SEARCH = 5
 
+UPSCALE_PERCENT = 300
+FRAME_DELAY = 1000
+
+EVENT_WINDOW = 10000 # nanosecs
+
 ####################################################################
 # imshow() displays a cv image to the screen
 # input:   img; a cv image
@@ -92,9 +97,6 @@ def displayEvents( gen , frame , pts ):
         right = []
         center = []
 
-        # limit correspondences to 1 in every x events
-        counter = 0
-
         # fill with event points
         for event in msg.events:
             # choose color
@@ -110,10 +112,7 @@ def displayEvents( gen , frame , pts ):
             else:
                 color = WHITE
 
-            if counter == 100:
-                correspond( img , event , left , center , right , pts ) 
-                counter = 0
-            counter += 1
+            correspond( img , event , left , center , right , pts ) 
 
             #if event.polarity:
             #    color = BLUE
@@ -121,9 +120,17 @@ def displayEvents( gen , frame , pts ):
             # draw circles
             cv2.circle(img , (event.x , event.y) , 2 , color, -1)
 
+        # upscale image
+        scale_percent = UPSCALE_PERCENT # percent of original size
+        width = int(img.shape[1] * scale_percent / 100)
+        height = int(img.shape[0] * scale_percent / 100)
+        dim = (width, height)
+        # resize image
+        resized = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+
         # display image
-        cv2.imshow("Events Gif", img)
-        cv2.waitKey(500)
+        cv2.imshow("Events Gif", resized)
+        cv2.waitKey(FRAME_DELAY)
         
     cv2.destroyAllWindows()
 
@@ -140,7 +147,7 @@ def findMirror( event , pts ):
 
     # find slopes of lines (y values inverted)
     leftSlope  = -( topL[1] - botL[1] ) / ( topL[0] - botL[0] )
-    rightSlope =  ( topR[1] - botR[1] ) / ( topR[0] - botR[0] )
+    rightSlope = -( topR[1] - botR[1] ) / ( topR[0] - botR[0] )
 
     # use point-slope formula to find x value of lines at event y
     leftX  = (((-event.y) - (-botL[1])) / leftSlope ) + botL[0]
@@ -149,9 +156,9 @@ def findMirror( event , pts ):
     # choose mirror based on x valueif left of left line, then on left mirror
     #if event.x > leftX and event.x < rightX:
     #    return CENTER
-    if event.x < rightX:
+    if event.x > rightX:
         return RIGHT
-    elif event.x > leftX:
+    elif event.x < leftX:
         return LEFT
     else:
         return CENTER
@@ -179,14 +186,15 @@ def correspond( img, event, left, center, right , pts):
 
     # Search +/- 5 rows for corresonding event (approx.)
     for compare in mirrors[0]:
-        # match polarity and rows
+        # match polarity, rows, time
         if (event.y in range( compare.y - SEARCH, compare.y + SEARCH )
-            and event.polarity == compare.polarity):
+            and event.polarity == compare.polarity
+            and abs(event.ts.to_nsec() - compare.ts.to_nsec()) 
+                <= EVENT_WINDOW):
             
             # draw a line for a match
             cv2.line(img, (event.x , event.y) , (compare.x , compare.y), 
                     WHITE, 1)
-            break
     
 def main():
     # NOTE: interesting stuff moreso at frame 200
