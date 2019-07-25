@@ -72,7 +72,6 @@ function bins = event_histogram( matbag , duration , time_start , interval)
     end    
     
     % set up and display plot
-    %plt = bar(bins);
-    
+    plt = bar(bins);    
 end
   
