@@ -72,6 +72,9 @@ function bins = event_histogram( matbag , duration , time_start , interval)
     end    
     
     % set up and display plot
-    plt = bar(bins);    
+    bar(bins);
+    xlabel('Time (\mus x 10)')
+    ylabel('Number of events')
+    set(gcf, 'Position', [100, 100, 1600, 900])
 end
   
