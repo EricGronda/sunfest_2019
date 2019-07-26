@@ -29,7 +29,7 @@ RIGHT = 2
 
 SEARCH = 5
 
-UPSCALE_PERCENT = 250
+UPSCALE_PERCENT = 279
 FRAME_DELAY = 10000 # millisecs
 
 EVENT_WINDOW = 10000 # nanosecs
@@ -143,27 +143,27 @@ def displayEvents( image_raw, events , frame , pts ):
 # input:       event; event object (includes coords & time)
 #              pts; line pts (topL, botL, topR, botR)
 # output:      LEFT (0), CENTER (1), RIGHT (2); integer for mirror 
-def findMirror( event , pts ):
+def findMirror( event , pts):
     topL = pts[0]
     botL = pts[1]
     topR = pts[2]
     botR = pts[3]
 
     # find slopes of lines (y values inverted)
-    leftSlope  = -( topL[1] - botL[1] ) / ( topL[0] - botL[0] )
+    leftSlope  = ( topL[1] - botL[1] ) / ( topL[0] - botL[0] )
     rightSlope = -( topR[1] - botR[1] ) / ( topR[0] - botR[0] )
 
     # use point-slope formula to find x value of lines at event y
-    leftX  = (((-event.y) - (-botL[1])) / leftSlope ) + botL[0]
-    rightX = (((-event.y) - (-botR[1])) / leftSlope ) + botR[0]
+    leftX  = (((event.y) - (botL[1])) / leftSlope ) + botL[0]
+    rightX = (((-event.y) - (-topR[1])) / leftSlope ) + topR[0]
 
     # choose mirror based on x valueif left of left line, then on left mirror
     #if event.x > leftX and event.x < rightX:
     #    return CENTER
     if event.x > rightX:
-        return RIGHT
-    elif event.x < leftX:
         return LEFT
+    elif event.x < leftX:
+        return RIGHT
     else:
         return CENTER
 
